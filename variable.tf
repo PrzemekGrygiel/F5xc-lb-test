@@ -10,7 +10,7 @@ variable vm_instance_type {
 }
 
 variable projectPrefix {
-  default = "pg-auto-lb16"
+  default = "pg-auto-lb4"
 }
 
 # AWS 
@@ -23,13 +23,13 @@ variable "volterra_key_name" {
 }
 
 variable "namespace" {
-    default = "przemek-multi-1"
+    default = "pg"
 }
 
 variable domain {
-    default = "demo.mwlabs.net"
+    default = "edge.mwlabs.net"
 }
 
 variable "instances_number" {
-    default = 32
+    default = 4
 }

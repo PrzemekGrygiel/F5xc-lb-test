@@ -17,11 +17,13 @@ resource "volterra_origin_pool" "pg-auto-pool" {
       }
     }
   }
-  #advanced_options {
-  #  enable_subsets {
-  #   endpoint_subsets {
-  #      keys = ["server"]
-  #   }
-  #  }
-  #}
+  advanced_options {
+    
+    enable_subsets {
+     any_endpoint = true
+     endpoint_subsets {
+        keys = ["server"]
+     }
+    }
+  }
 }
